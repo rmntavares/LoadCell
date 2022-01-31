@@ -28,6 +28,13 @@ void calibrate(){
 }
 
 void loop() {
-  calibrate();
+  //calibrate();
+  if (scale.wait_ready_timeout(1000)) {
+    long reading = scale.read();
+    Serial.print("HX711 reading: ");
+    Serial.println(reading);
+  } else {
+    Serial.println("HX711 not found.");
+  }
 }
 
