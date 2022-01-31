@@ -5,6 +5,7 @@ LoadCell is an implementation of HX711 library with calibration function.
 Uncomment this line on main function.
 ```c++
 calibrate();
+```
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/) hello
+[MIT](https://choosealicense.com/licenses/mit/)
